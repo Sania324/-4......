@@ -1,0 +1,20 @@
+string first;
+  cout << "Enter first string" << endl;
+  cin >> first;
+  string second;
+  cout << "Enter second string" << endl;
+  cin >> second;
+  string third;
+  bool P;
+  for (int i = 0; i < first.length(); i++) {
+    P = true;
+    for (int j = 0; j < second.length(); j++) {
+      if (first[i] == second[j]) {
+        P = false;
+      }
+    }
+    if (P) {
+      third += first[i];
+    }
+  }
+  cout << third;
